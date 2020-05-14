@@ -1,0 +1,200 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>蚌埠风光</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .d1 {
+            width: 1519.2px;
+            height: 497.6px;
+        }
+        
+        .i1 {
+            width: 1519.2px;
+            height: 497.6px;
+        }
+        
+        .daohanglan {
+            width: 1519.2px;
+            height: 40px;
+            text-align: center;
+            background-color: darkgreen;
+            margin-top: 0;
+        }
+        
+        .daohanglan a {
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            background-color: darkgreen;
+            text-align: center;
+            color: white;
+            line-height: 40px;
+            text-decoration: none;
+        }
+        
+        .d2 {
+            height: 60px;
+            width: 1000px;
+            text-align: center;
+            line-height: 60px;
+            margin: 10px auto;
+        }
+        
+        h2 {
+            letter-spacing: 0.5em;
+            font-size: 2em;
+            color: darkgreen;
+        }
+        
+        a:hover {
+            background-color: green;
+            color: wheat;
+        }
+        
+        .d3 {
+            width: 950px;
+            height: 350px;
+            margin: auto;
+        }
+        
+        .right {
+            height: 280px;
+            width: 310px;
+            float: left;
+            padding-top: 70px;
+            padding-left: 40px;
+            margin-top: 20px;
+            margin-left: 50px;
+            letter-spacing: 0.25em;
+            background: url(../static/profile/images/城市荣誉.PNG) no-repeat;
+        }
+        
+        .right ul {
+            margin-left: 10px;
+        }
+        
+        .right ul li {
+            height: 40px;
+        }
+        
+        .left {
+            height: 350px;
+            width: 500px;
+            float: left;
+            margin-top: 50px;
+        }
+        
+        .d4 {
+            width: 950px;
+            height: 500px;
+            margin: auto;
+            margin-top: 60px;
+            padding: 20px;
+            text-indent: 2em;
+            font-size: 16px;
+            font-family: unset;
+            letter-spacing: 0.40em;
+        }
+        
+        .s1 {
+            color: darkgreen;
+            font-size: 1.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .foot {
+            height: 200px;
+            width: 1520px;
+            background-color: gainsboro;
+            margin-top: 10px;
+        }
+        
+        .up {
+            height: 60px;
+            width: 500px;
+            padding-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .down {
+            height: 60px;
+            width: 1300px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="d1">
+
+        <img class="i1" src="../static/profile/images/走进蚌埠.png">
+
+    </div>
+    <div class="daohanglan">
+        <a href="{{url_for('index')}}">首页</a>
+        <a href="{{url_for('cityCondition')}}">城市概况</a>
+        <a href="{{url_for('scenicSpot')}}">特色景点</a>
+        <a href="{{url_for('foods')}}">特色美食</a>
+        <a href="{{url_for('paths')}}">旅游路线</a>
+        <a href="{{url_for('comfunction')}}">评论区</a>
+    </div>
+    <div class="d2">
+        <h2>禹会诸侯地，淮上明珠城</h2>
+    </div>
+    <div class="d3">
+        <div class="left">
+            <video autoplay="autoplay" muted="muted" loop="loop" controls>
+                <source src="../static/profile/images/蚌埠风光.mp4" type="video/mp4" />
+                您的浏览器不支持播放此视频
+            </video>
+        </div>
+        <div class="right">
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>蚌埠</strong>，地处淮河中游，古乃采珠之地，誉称“珠城”。 现辖怀远、五河、固镇三县，龙子湖、蚌山、禹会、淮上 四个行政区，国家级蚌埠高新技术产业开发区和蚌埠经济开发区两个功能区。总面积5952平方公里，年末常住人口 341.2万人，年末户籍人口386.3万人， 其中城镇户籍人口 143.14万人，城镇化率58.6%； 市区面积约960平方公里，市区建成区面积约140平方公里。 -->
+            <ul>
+                <li>全国文明城市</li>
+
+                <li>全国性综合交通枢纽城市</li>
+
+                <li>淮河流域中心城市</li>
+
+                <li>皖北地区中心城市</li>
+
+                <li>安徽省旅游中心城市</li>
+
+                <li>合肥都市圈城市</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="d4">
+        <span class="s1">蚌埠文化简介：</span> 蚌埠位于安徽省北部，淮河中游，古乃“采珠之地”,又称“珠城”。1911年津浦铁路开通后正式开埠，1947年正式设市，是安徽省第一个设市的城市，是皖北乃至中原地区重要的加工、商贸、科技中心。现辖怀远、固镇、五河三个县，龙子湖、蚌山、禹会、淮上四个区及国家级高新技术产业开发区和省级开发区6个。 总面积 5952平方公里，总人口360万，市区面积601.5平方公里，其中建成区面积104平方公里，市区常住人口105万人，进入“双百”城市。
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;蚌埠自然条件优越，滨临淮河，山水相连，四季分明，气候宜人，物产丰富。市辖三县均为全国商品粮大县，怀远石榴、五河螃蟹、固镇花生在国内均有较高知名度，蚌埠交通发达，地处京沪铁路和千里淮河的交叉点，是京沪高速铁路重要站点，蚌埠港是千里淮河第一大港，可四季通航千吨级货轮，通达江苏、上海、浙江、江西等省市。北京至福州、上海至洛阳高速在蚌埠“十字”交汇，4C级标准新机场距市区仅11公里，民航开通正在洽谈中。 <br>&nbsp;&nbsp;&nbsp;&nbsp;蚌埠历史文化悠久，双墩考古发现了7000多年前文化遗存，4000多年前大禹治水会诸侯于境内的涂山。
+        蚌埠自古就是兵家必争之地，楚汉垓下之战、解放战争淮海战役等均在此上演。被周恩来同志誉为“东方芭蕾”的汉民族最具代表性的民间舞蹈—花鼓灯。 蚌埠拥有较好的工业基础和较强的加工配套能力，已经形成以加工业为主、门类较为齐全的工业体系。蚌埠科教基础雄厚、人力资源丰富，拥有中央和省属科研院所8个、国家和省级技术研发中心20个、高等院校10所、地方科研机构91个、各类中等职业教育学校34所，年输送毕业生2万多人、培养熟练技术工人2.3万人。<br>&nbsp;&nbsp;&nbsp;&nbsp;
+        蚌埠市淮河穿城而过，山水相依，自然风光秀丽多姿，人文景观、名胜古迹众多，龙子湖风景区、蚌埠闸水利风景区、张公山公园、珠园、南山儿童公园、花鼓灯嘉年华等点缀其间，使人流连忘返！
+    </div>
+    <div class="foot">
+        <div class="up">
+            <span>相关官网推荐：</span>
+            <span><a href="http://www.bengbu.gov.cn/" > <base target="_blank">蚌埠市人民政府官网</a></span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><a href="http://wlj.bengbu.gov.cn/"><base target="_blank">蚌埠市文化和旅游局</a></span>
+        </div>
+
+        <div class="down">
+            <em>Copyright@2020 HXM.ALL Rights Reserved.</em>
+        </div>
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>评论区</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .d1 {
+            height: 80px;
+            width: 100%;
+            background-color: darkgreen;
+        }
+         .p1 {
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            padding-top: 10px;
+            letter-spacing: 0.7em;
+        }
+         .d2{
+             width: 1500px;
+             height: 1200px;
+             margin-left: auto;
+             margin-right: auto;
+         }
+        .d2-1{
+            width: 800px;
+            height: 1000px;
+            background-color: darkgrey;
+            float:left;
+            margin: 20px;
+        }
+
+        .d2-2{
+            height: 800px;
+            width: 400px;
+            float: left;
+            padding-top: 200px;
+            padding-right: 100px;
+        }
+        
+
+        
+        .foot {
+            height: 200px;
+            width: 1520px;
+            background-color: gainsboro;
+            margin-top: 10px;
+        }
+        
+        .up {
+            height: 60px;
+            width: 500px;
+            padding-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .down {
+            height: 60px;
+            width: 1300px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <p class="p1">评论区</p>
+    </div>
+    <div class="d2">
+        <div class="d2-1">
+        {% if comment %}
+            {% for n in comment %}
+            <p>{{comment.com}}<br>
+            {{com.timestamp}}</p>
+            {% endfor%}
+        {% endif %}
+    </div>
+    <div class="d2-2">
+         <form action="" method="GET" >
+            <p>{{form.content.label}}<br>
+                {{form.content(size=150)}}<br>
+            {% for error in form.content.error %}
+                <span style="color:red;">[{{ error }}]</span>
+            {% endfor %}</p>
+            <p>{{form.submit}}</p>
+        </form>
+    </div>
+    </div>
+
+    <div class="foot">
+        <div class="up">
+            <span>相关官网推荐：</span>
+            <span><a href="http://www.bengbu.gov.cn/"><base target="_blank">蚌埠市人民政府官网</a></span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><a href="http://wlj.bengbu.gov.cn/"><base target="_blank">蚌埠市文化和旅游局</a></span>
+        </div>
+
+        <div class="down">
+            <em>Copyright@2020 HXM.ALL Rights Reserved.</em>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

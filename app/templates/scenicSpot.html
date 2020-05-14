@@ -1,0 +1,131 @@
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>特色景点</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .d1 {
+            height: 80px;
+            width: 100%;
+            background-color: darkgreen;
+        }
+        
+        .p1 {
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            padding-top: 10px;
+            letter-spacing: 0.7em;
+        }
+        
+        .d2 {
+            width: 100%;
+            height: 1800px;
+            margin-top: 40px;
+        }
+        
+        .d2 .di {
+            width: 700px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        
+        .d2 .di img {
+            width: 400px;
+            height: 300px;
+        }
+        
+        .left {
+            width: 400px;
+            height: 300px;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .right {
+            width: 220px;
+            height: 230px;
+            font-size: 18px;
+            padding: 10px;
+            padding-top: 40px;
+            float: left;
+        }
+        
+        .foot {
+            height: 200px;
+            width: 1520px;
+            background-color: gainsboro;
+            margin-top: 10px;
+        }
+        
+        .up {
+            height: 60px;
+            width: 500px;
+            padding-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .down {
+            height: 60px;
+            width: 1300px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <p class="p1">特色景点</p>
+    </div>
+
+    <div class="d2">
+        <div class="di">
+            <div class="left"><img src="../static/profile/images/longzihu/766c23d2e925dc4d3209dfdcfbc65044.jpg" alt=""></div>
+            <div class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{url_for('longZiHu')}}">龙子湖风景区</a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龙子湖风景区，国家AAAA级旅游景区。国家级生态示范区。龙子湖风景区位于蚌埠市东郊曹山和雪华山之间，呈两山夹一湖的独特风月貌。</div>
+        </div>
+        <div class="di">
+            <div class="left"> <img src="../static/profile/images/zgs/6.jpg" alt=""></div>
+            <div class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{url_for('zhangGongShan')}}">张公山风景区</a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张公山风景区是国家AAAA景区，位于安徽省蚌埠市西南部，地属禹会区，占地面积110.6公顷。
+            </div>
+        </div>
+        <div class="di">
+            <div class="left"><img src="../static/profile/images/hushangshengmingyue/10a025201c314c2db2326882478be68e.jpeg" alt=""></div>
+            <div class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{url_for('huShangShengMingYue')}}">湖上升明月</a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蚌埠湖上升明月（古民居博览园）位于安徽省蚌埠市龙子湖南部，是一个以修复重建450栋不同地区传统民居建筑为主的大型旅游项目。民族特色鲜明，旅游文化功能突出，市场运营潜力巨大。项目建设目标是创建国家5A级风景旅游区。</div>
+        </div>
+        <div class="di">
+            <div class="left"><img src="../static/profile/images/tushan/5.jpg" alt=""></div>
+            <div class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{url_for('yuWangGong')}}">禹王宫</a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;禹王宫，俗称禹王庙，又称涂山祠，位于大禹劈山导淮的涂山顶峰，山下涡淮汇聚，滚滚东流；山上松柏葱郁，古迹遍布。</div>
+        </div>
+        <div class="di">
+            <div class="left"><img src="../static/profile/images/haochenggaixia/1.jpg"></div>
+            <div class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{url_for('haoChengGaiXia')}}">豪城垓下遗址</a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垓下遗址，为秦末汉初楚汉垓下决战时项羽大本营和汉代交国、汶县治所故地， [1] 又名霸王城。西汉时曾作为洨县县城址。</div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <div class="up">
+            <span>相关官网推荐：</span>
+            <span><a href="http://www.bengbu.gov.cn/"><base target="_blank">蚌埠市人民政府官网</a></span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><a href="http://wlj.bengbu.gov.cn/"><base target="_blank">蚌埠市文化和旅游局</a></span>
+        </div>
+
+        <div class="down">
+            <em>Copyright@2020 HXM.ALL Rights Reserved.</em>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
